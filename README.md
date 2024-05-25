@@ -12,9 +12,9 @@ In my case, I'm dividing these two tools into different categories Data Manipula
 
 |Data Manipulation||Data Management|
 |:---------------:|:-------------:|
-|[Python](#python)|[DB](#db)||[RDBMS](#rdbms)|
-|[Visualization Techniques](#vt)|[SQL](#SQL)| 
-
+|[Python](#python)|[DB](#db)|
+|[Visualization Techniques](#vt)|[RDBMS](#rdbms)|
+||[SQL](#SQL)| 
 ### <a id=python>PYTHON</a>
 
 In this context, the specific programming language doesn't matter much; the essence is the same— **PRACTICE**.
