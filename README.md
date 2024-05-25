@@ -10,7 +10,7 @@ My goal is to become a **Data Architect**, and Python and SQL play significant r
 
 In my case, I'm dividing these two tools into different categories Data Manipulation (python) and Data Management (SQL).
 
-|Data Manipulation||Data Management|
+|Data Manipulation|Data Management|
 |:---------------:|:-------------:|
 |[Python](#python)|[DB](#db)|
 |[Visualization Techniques](#vt)|[RDBMS](#rdbms)|
