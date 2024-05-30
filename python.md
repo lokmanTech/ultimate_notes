@@ -1,7 +1,7 @@
 ### <a id=python>PYTHON</a>
 
-|Data Manipulation|
-|:---------------:|
+|Table of contents|
+|:----------------|
 |[Python](python.md)|
 |[Visualization Techniques](python.md#vt)|
 
