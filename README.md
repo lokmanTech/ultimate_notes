@@ -1,4 +1,4 @@
-# Programming Notes
+# Ultimate Notes
 
 A collection of notes and resources on learning Python & SQL, including code snippets, tutorials, and best practices. Ideal for beginners and enthusiasts to enhance their programming skills.
 
