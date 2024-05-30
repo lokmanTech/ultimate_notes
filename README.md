@@ -13,7 +13,7 @@ In my case, I'm dividing these two tools into different categories Data Manipula
 |Data Manipulation|Data Management|
 |:---------------:|:-------------:|
 |[Python](python.md)|[DB](Database.md#db)|
-|[Visualization Techniques](python.md#vt))|[RDBMS](Database.md#rdbms)|
+|[Visualization Techniques](python.md#vt)|[RDBMS](Database.md#rdbms)|
 ||[SQL](SQL.md)| 
 
 
