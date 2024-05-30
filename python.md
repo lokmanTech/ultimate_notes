@@ -1,5 +1,10 @@
 ### <a id=python>PYTHON</a>
 
+|Data Manipulation|
+|:---------------:|
+|[Python](python.md)|
+|[Visualization Techniques](python.md#vt)|
+
 ### 1.0 Familiarity with Functions, Reserved Keywords & Symbols
 
 Familiarize yourself with functions, reserved keywords, and symbols to enhance your understanding of any programming code. In class, there is often a chapter-by-chapter syllabus, but different people have different learning methods.
