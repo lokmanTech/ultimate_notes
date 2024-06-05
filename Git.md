@@ -66,7 +66,7 @@ This will print the username and password applicable to the current repository.
 - Staged: You have marked the modified or created file for committing.
 - Committed: You have successfully saved the files as a snapshot in your local repository.
 
-<p align="center"><img source="img/StatesInGit.png"></p>
+<p align="center"><img src="img/StatesInGit.png"></p>
 
 You can check the status of files using the command:
 
@@ -80,7 +80,7 @@ This will show the current branch(master by default) and the status of files gro
 
 The branches provide developers with separate workspaces for their code to work simultaneously without messing up the main line. This enables developers to create a new branch for a feature development or a bug fix for encapsulating their changes without affecting the main branch. There will be a main line of branch for project, typically named the “master” branch from which several branches diverge.
 
-<p align="center"><img source="img/BranchingInGit.png"></p>
+<p align="center"><img src="img/BranchingInGit.png"></p>
 
 ### Getting Started
 
@@ -157,7 +157,7 @@ Give the repository a name of your choice. Scroll down and then click on the Cre
 
 You can get the repository url of the newly created GitHub repository from:
 
-<p align="center"><img source="img/GitRepo.png"></p>
+<p align="center"><img src="img/GitRepo.png"></p>
 
 To add a remote repository to your local repository use the command:
 
@@ -224,7 +224,7 @@ This command is a combination of fetch and merge operations.
 
 ### Git Workflow
 
-<p align="center"><img source="img/GitWorkflow.png"></p>
+<p align="center"><img src="img/GitWorkflow.png"></p>
 
 
 
