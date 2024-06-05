@@ -13,7 +13,7 @@ Git is a free and open-source distributed version control system for tracking ch
 Think of Git as the tool that creates the timeline but doesn’t store your files online. That’s where GitHub comes in. GitHub is a popular online platform designed specifically for Git repositories. Imagine Git as a personal filing system and GitHub as a secure online storage locker for your versions.
 
 ### The Stages in Git
-<p align="center" source="img/GitStages.png></p>
+<p align="center"><img source="img/GitStages.png></p>
 
 - Working Directory: This is the area where you create, modify, or delete your files for your project.
 - Staging Area: This is the pre-commit area. Whenever a file is marked for commit it is moved to this area.
