@@ -14,7 +14,7 @@ In my case, I'm dividing these two tools into different categories Data Manipula
 |:--------:|:------:|
 |Data Manipulation| [Python](python.md), [Visualization Techniques in Pyhton](python.md#vt) |
 |Data Management| [DB](Database.md#db), [RDBMS](Database.md#rdbms), [SQL](SQL.md) |
-|Version Control| [Git](#) |
+|Version Control| [Git](Git.md) |
 |Data Collection & Ingestion|  [Apache Kafka](#)|
 |Data Cleaning & Preprocessing| [OpenRefine](#) |
 |Data Storage| [Amazon S3](#), [Hadoop](#), [Apache Cassandra](#) |
