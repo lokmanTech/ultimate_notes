@@ -224,7 +224,7 @@ This command is a combination of fetch and merge operations.
 
 ### Git Workflow
 
-<a align="center" source="img/GitWorkflow.png></a>
+<a align="center"><img source="img/GitWorkflow.png></a>
 
 
 
