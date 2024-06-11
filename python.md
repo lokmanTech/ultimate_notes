@@ -167,7 +167,7 @@ Alternatively, dot plots work better for visualizing change over time.
 <p align="center"><img src="img/DotPlots.png"></p>
 
 
-### Backslash Character
+### <a id=backslash>Backslash Character</a>
 
 If we try to put a single quote character inside a single-quoted string, python gets confused:
 
