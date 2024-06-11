@@ -4,7 +4,7 @@
 |:----------------|
 |[Python](python.md)|
 |[Visualization Techniques](python.md#vt)|
-|[Backslash Character](#python.md#backslash)|
+|[Backslash Character](python.md#backslash)|
 
 ### 1.0 Familiarity with Functions, Reserved Keywords & Symbols
 
