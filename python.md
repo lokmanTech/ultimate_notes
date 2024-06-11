@@ -4,6 +4,7 @@
 |:----------------|
 |[Python](python.md)|
 |[Visualization Techniques](python.md#vt)|
+|[Backslash Character](#python.md#backslash)|
 
 ### 1.0 Familiarity with Functions, Reserved Keywords & Symbols
 
@@ -164,3 +165,34 @@ Bar charts? Overwhelmed with categories?  Try bubble plots!  Imagine scatter plo
 Alternatively, dot plots work better for visualizing change over time.
 
 <p align="center"><img src="img/DotPlots.png"></p>
+
+
+### Backslash Character
+
+If we try to put a single quote character inside a single-quoted string, python gets confused:
+
+```python
+'Pluto's a planet!'
+```
+result: invalid syntax
+
+we can fix this by "escaping" the single quote with a backslash.
+
+```python
+'Pluto\'s a planet!'
+```
+result: "Pluto's a planet!"
+
+The table below summarizes some important uses of the backslash character.
+
+|What you type..|What you get|example|print(example)|
+|:-------------:|:----------:|:-----:|:------------:|
+|\'|'|'What\'s up?'|What's up?|
+|\"|"|"That's \"cool\""|That's "cool"|
+|\\|\|"Look, a mountain: /\\"|Look, a mountain: /\|
+|\n| | "1\n2 3"| 1
+2 3|
+
+the last sequence, `\n` represents the *newline character*. It causes Python to start a new line.
+
+
