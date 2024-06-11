@@ -190,8 +190,8 @@ The table below summarizes some important uses of the backslash character.
 |\'|'|'What\'s up?'|What's up?|
 |\"|"|"That's \"cool\""|That's "cool"|
 |\\|\|"Look, a mountain: /\\"|Look, a mountain: /\|
-|\n| | "1\n2 3"| 1
-2 3|
+|\n| | "1\n2 3"| <p>1</p><p>2 3</p>|
+
 
 the last sequence, `\n` represents the *newline character*. It causes Python to start a new line.
 
