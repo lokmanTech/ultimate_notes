@@ -12,7 +12,7 @@ In my case, I'm dividing these two tools into different categories Data Manipula
 
 |Data Notes|Chapters|
 |:--------:|:------:|
-|Data Manipulation| [Python](python.md), [Visualization Techniques in Pyhton](python.md#vt) |
+|Data Manipulation| [Python](python.md) |
 |Data Management| [DB](Database.md#db), [RDBMS](Database.md#rdbms), [SQL](SQL.md) |
 |Version Control| [Git](Git.md) |
 |Data Collection & Ingestion|  [Apache Kafka](#)|
