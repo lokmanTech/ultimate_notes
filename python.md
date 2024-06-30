@@ -3,8 +3,9 @@
 |Table of contents|
 |:----------------|
 |[Python](python.md)|
-|[Visualization Techniques](python.md#vt)|
+|[Graph Visualization Techniques](python.md#vt)|
 |[Backslash Character](python.md#backslash)|
+|[Map Visualization Techniques](python.md#map)|
 
 ### 1.0 Familiarity with Functions, Reserved Keywords & Symbols
 
@@ -194,5 +195,77 @@ The table below summarizes some important uses of the backslash character.
 
 
 the last sequence, `\n` represents the *newline character*. It causes Python to start a new line.
+
+
+### <a id=map>Map Data Visualization</a>
+
+To begin with I got this source of information from `Medium` website posted by `Aleksei Rozanov` on Feb 10, 2024, Title: [6 python libraries to make beautiful maps](https://medium.com/@alexroz/6-python-libraries-to-make-beautiful-maps-9fb9edb28b27)
+
+**1. CARTOPY**
+
+<p align="center"><img src="img/Cartopy-01.png"></p>
+
+Cartopy is a highly regarded library ideal for creating static maps with scalar or polygon data. It includes numerous built-in layers for land, water, and administrative borders. With its user-friendly commands, Cartopy makes map plotting straightforward and intuitive.
+
+To install the package, you can use regular expression with *pip*:
+
+```python
+!pip install cartopy
+```
+
+Now, let's laod the data
+
+```python
+import numpy as np
+import matplotlib.pyplota s plt
+
+lats = np.load('lats.npy')
+lons = np.load('lons.npy')
+data = np.load('data.npy')
+```
+
+After this we can plot the data right away
+
+```python
+proj = ccrs.PlateCarree() #let's set the map's projection
+
+fig, ax = plt.subplots(subplot_kw=dict(projection=proj), figsize=(10, 20))#now we need to create a figure with the pre-set projection and a size
+
+ax.set_extent([-160, -105, 40 ,70], crs=ccrs.PlateCarree())#let's limit the coordinates to have only the region of MODIS product
+
+plt.contourf(lons, lats, data,
+             transform=ccrs.PlateCarree(), cmap = 'summer') #let's add a countor of the data using matplotlib
+'''Adding nice cartopy features'''
+ax.add_feature(cfeature.BORDERS, edgecolor='black', linewidth=1) 
+ax.add_feature(cfeature.LAKES,  alpha=0.5)
+ax.add_feature(cfeature.LAND)
+ax.add_feature(cfeature.COASTLINE, edgecolor='black', linewidth=1)
+ax.add_feature(cartopy.feature.RIVERS, edgecolor='blue', linewidth=0.5)
+states_provinces = cfeature.NaturalEarthFeature(
+            category='cultural',  name='admin_1_states_provinces',
+            scale='10m', facecolor='none')
+ax.add_feature(states_provinces, edgecolor='black', zorder=10, linestyle = '-', linewidth=0.5)
+
+
+ax.gridlines(draw_labels=True)#formating the grid
+
+lon, lat = -122.8414, 55.1119 
+ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#adding some random marker to the map
+```
+
+<p align="center"><img src="img/Cartopy-02.png"></p>
+
+As evident from the results, Cartopy offers a wealth of customization options for your maps, allowing you to manually adjust colors, line widths, density, and other layer parameters. Furthermore, the code is intuitive and easy to understand.
+
+Another significant advantage of Cartopy is its extensive range of projections, enabling you to visualize a wide variety of data effectively.
+
+InterruptedGoode Homolosine
+
+<p align="center"><img src="img/Cartopy-03.png"></p>
+
+NorthPolarStereo
+
+<p align="center"><img src="img/Cartopy-04.png"></p>
+
 
 
