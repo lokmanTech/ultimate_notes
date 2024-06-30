@@ -263,9 +263,30 @@ InterruptedGoode Homolosine
 
 <p align="center"><img src="img/cartopy-03.png"></p>
 
+```python
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+
+plt.figure(figsize=(6.92280629527, 3))
+ax = plt.axes(projection=ccrs.InterruptedGoodeHomolosine())
+ax.coastlines(resolution='110m')
+ax.gridlines()
+```
+
 NorthPolarStereo
 
 <p align="center"><img src="img/cartopy-04.png"></p>
 
+```pyhton
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+
+plt.figure(figsize=(3, 3))
+ax = plt.axes(projection=ccrs.NorthPolarStereo())
+ax.coastlines(resolution='110m')
+ax.gridlines()
+```
+
+There are more Cartopy Map Visualization you can make, you can visit this website to gain more insights about Cartopy Visualization at [Cartopy Projection List](https://scitools.org.uk/cartopy/docs/v0.15/crs/projections.html)
 
 
