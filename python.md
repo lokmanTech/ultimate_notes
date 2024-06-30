@@ -203,7 +203,7 @@ To begin with I got this source of information from `Medium` website posted by `
 
 **1. CARTOPY**
 
-<p align="center"><img src="img/Cartopy-01.png"></p>
+<p align="center"><img src="img/cartopy-01.png"></p>
 
 Cartopy is a highly regarded library ideal for creating static maps with scalar or polygon data. It includes numerous built-in layers for land, water, and administrative borders. With its user-friendly commands, Cartopy makes map plotting straightforward and intuitive.
 
@@ -253,7 +253,7 @@ lon, lat = -122.8414, 55.1119
 ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#adding some random marker to the map
 ```
 
-<p align="center"><img src="img/Cartopy-02.png"></p>
+<p align="center"><img src="img/cartopy-02.png"></p>
 
 As evident from the results, Cartopy offers a wealth of customization options for your maps, allowing you to manually adjust colors, line widths, density, and other layer parameters. Furthermore, the code is intuitive and easy to understand.
 
@@ -261,11 +261,11 @@ Another significant advantage of Cartopy is its extensive range of projections, 
 
 InterruptedGoode Homolosine
 
-<p align="center"><img src="img/Cartopy-03.png"></p>
+<p align="center"><img src="img/cartopy-03.png"></p>
 
 NorthPolarStereo
 
-<p align="center"><img src="img/Cartopy-04.png"></p>
+<p align="center"><img src="img/cartopy-04.png"></p>
 
 
 
