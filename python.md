@@ -7,6 +7,53 @@
 |[Backslash Character](python.md#backslash)|
 |[Map Visualization Techniques](python.md#map)|
 
+### What is python?
+
+Python is a popular language. It was created by Guido van Rossum, and released in 1991.
+
+It is used for:
+- Web development (server-side)
+- software development
+- mathematics
+- system scripting
+
+What can Python do?
+- Used on server to create web applications.
+- Used alongside software to create workflows
+- connect to database systems. It can also read modify files
+- used to handle big data and perform complex mathematics
+- used for rapid prototyping or for production-ready software development
+
+Why python?
+- works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+- has a simple syntax similar to the English Language
+- Has syntax that allows developers to write programs with fewer lines than some other programming languages
+- runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick
+- can be treated in a procedural way, an object oriented way or a functional way.
+
+Good to know
+- The most recent major version of python is python 3, which we shall be using in this. However, python 2 although not being update with anything other that security updates is still quite popular.
+
+Pyhon Syntax compared to other programming languages
+- was designed for readability, and has some similarities to the English with influence from mathematics
+- uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+- relies on indentationm using whitespaces, to define scope; such as the scope of loops, funcstion and classes. Other programming languages ofthen use curly-bracket for this purpose.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 1.0 Familiarity with Functions, Reserved Keywords & Symbols
 
 Familiarize yourself with functions, reserved keywords, and symbols to enhance your understanding of any programming code. In class, there is often a chapter-by-chapter syllabus, but different people have different learning methods.
