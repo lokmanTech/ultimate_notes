@@ -289,6 +289,255 @@ When your cache memory is full, your cache evicts data based on your selected ev
 
 **AWS Schema Conversion tool**
 
+### Module 7: Monitoring and Scaling
+
+**Monitoring**
+
+**Reasons for monitoring**
+
+**Amazon CloudWatch**
+
+**CloudWatch metrics**
+
+**Types of logs**
+
+**CloudWatch Logs example**
+
+**AWS CloudTrail**
+
+**Example: CloudTrail Log**
+
+**VPC Flow Logs**
+
+**Contents of a flow log record**
+
+#### Alarms and events
+
+**CloudWatch alarms**
+
+**Alarm states**
+
+**Alarm components**
+
+**Amazon EventBridge**
+
+**Example: CloudWatch alarm automated response**
+
+#### Load balancing
+
+**Elastic Load Balancing (ELB)**
+
+**ELB load balancer types**
+
+**ELB load balancer components**
+
+**ELB common features**
+
+|Feature|Application Load Balancer|Network Load Balancer|Gateway Load Balancer|
+|:-----:|:-----:|:-----:|:-----:|
+|Health Checks|YES|YES|YES|
+|CloudWatch metrics|YES|YES|YES|
+|Logging|YES|YES|YES|
+|SSL offloading|YES|YES| |
+|Connection draining|YES|YES|YES|
+|Preserve source IP address|YES|YES|YES|
+|Static IP address|**|YES||
+|Lambda function as a target|YES|||
+|Redirects|YES|||
+|Fixed-response actions|YES|||
+
+#### Auto scaling
+
+**AWS Auto Scaling**
+1. Explore your application
+2. Discover what you can scale
+3. Choose what to optimize
+4. Track scaling as it happens
+
+**Amazon EC2 Auto Scaling**
+- Helps you control EC2 instances available to handle load for your application
+- Launches or terminates your AWS resources based on specified conditions
+- Registered new instances with load balancers, when specified
+
+**Elasticity: Scaling in and out**
+Using cloud tech, you can fit supply to demand through elastic cllud resources.
+
+**Amazon EC2 Auto Scaling Components**
+
+1. Launch templates: What resources do you need?
+2. Amazon EC2 Auto Scaling Group: Where and how many do you need?
+3. Auto scaling policy: When and for how long do you need them?
+
+**Launch Template**
+
+**Group capacity**
+
+**Invoke Amazon EC2 Auto Scaling**
+Invoke scaling with:
+- Health status checks
+- Cloudwatch alarm
+- Schedules
+- Manual scaling
+
+**Ways to scale with Amazon EC2 Auto Scaling**
+1. Scheduled
+2. Dynamic: according to demand eg. touch 70% will scale it
+3. Predictive: this is AI will review accound previous report to predict accordingly.
+
+**Optimize cost with Amazon EC2 Auto Scaling**
+- On-demand Instances
+- Savings Plans
+- Spot Instances
+
+### Module 8: Automation
+
+**Infrastructure as code (IaC)**
+
+
+**Benefits of IaC - Reusability**
+
+**Benefits of IaC - Updates**
+
+**AWS CloudFormation**
+
+**Understanding CloudFormation**
+- Written as JSON or YAML
+- Describes the resources to be created or modified
+- Treated as source code
+  - Code review
+  - Version controlled
+
+**Stacks**
+
+**Using Multiples templates**
+
+
+A layered architecture
+
+- Identity: AWS identity and Access management (IAM) users, groups, roles
+- Base network: VPCs, Internet gateways, Virtual Private Networks (VPNs), NAT Gateway
+- Shared: Databases, common monitoring or alarms, subnets, security groups
+- Backend: Customers, campaign, products, analytics, marketing collateral
+- Frontend: Web interface, admin interface, analytics dashboard
+
+#### Infrastructure management
+
+**Infrastructure tools**
+
+Deployments tools from Control to Convenience
+1. AWS CloudFormation
+2. AWS Cloud Development Kit (AWS CDK)
+3. AWS Solutions Library
+4. AWS Elastic Beanstalk
+
+Management tools
+1. AWS Systems Manager
+
+**AWS Elastic Beanstalk**
+
+**AWS Solutions Library**
+
+**AWS CDK**
+
+**AWS Systems Manager**
+
+**Amazon CodeWhisperer**
+
+**What is Amazon CodeWhisperer?**
+AI-powered code generator for IDEs and code editors
+
+AI coding companions:
+- Generates code suggestions based on comments and existing code
+- Offers real-time support for code authoring directly within your integrated development environment (IDE)
+AI Security scanner:
+- Helps identify hard-to-find vulnerabilities
+- References multiple standards and best practices
+
+**Code generation**
+
+**Security Scan**
+
+**Benefits of Amazon CodeWhisperer**
+
+Value to developers
+- Increase velocity
+- Spend less time writing code
+- Receive help directly within your IDE
+- Find security vulnerabilities in your code
+
+Value to organizations
+- Use at all experience levels
+- Support open-source attribution
+- Reduce the risk of security vulnerabilities
+- Increase code quality and developer productivity
+
+
+
+[AWS got Quick Start Template](https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-content-type=*all&awsf.filter-tech-category=*all&awsf.filter-industry=*all)
+
+
+### Module 9: Containers
+
+#### Microservices overview
+
+**Loose coupling**
+
+Anti-pattern
+- Web servers tightly coupled to application servers
+
+Best practice
+- Decouple with a load balancer via Elastic Load Balancing
+
+Traditional monolithics infrastructure revolve around chains of tightly integrated servers, each with a specific purpose.
+
+**Microservices**
+
+Microservices are an architectural and organizational approach to software development. Using a microservices approach, you design software as a collection of small services. Each service is deployed independently and commnunicates over well-defined APIs. This process speeds up your deployments cycles, foster innovation, and improves both maintainbility and scalability of your applications.
+
+**Containers**
+The benefits of a microservices-oriented architecture should trickle down to an infrastructure level. You can achieve that with containers.
+
+Containers are:
+- Repeatable
+- Self-contained environments
+- Faster to spin up and down than VMs
+- Portable
+- Scalable
+
+**Containers and microservices**
+Containers are an ideal choice for microservices architecture because they are scalable, portable and continuously deployable.
+
+**Levels of abstraction and virtualization**
+A bare metal server runs a standalone operating system (OS) with one or many application by using libraries. Costs remain constant, whether the server is running at 0% usage or 100% usage. To scale you must buy and configure additional servers. It is also difficult to build applications that work on multiple servers because the OS on those servers would need to be the same, You also must synchronize the application lib ver.
+
+**Containers on AWS**
+- Running containers directly on Amazon EC2 requires you to manage scalling, connectivity and maintenance.
+- Using an orchestrating tool helps manage:
+    - Scheduling
+    - Placement
+    - Networking
+    - Monitoring
+
+#### Container Services
+
+**Running containers on AWS**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
