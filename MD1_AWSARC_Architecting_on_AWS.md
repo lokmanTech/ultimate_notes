@@ -557,6 +557,88 @@ Kubernetes
 
 **Choosing AWS containers services**
 
+### Module 11: Serverless
+
+#### Amazon Simple Queue Service (Amazon SQS)
+
+**Amazon SQS**
+
+**Loose coupling with Amazon SQS**
+- Loosely couples application components
+- Uses asynchronous processing
+- Creates tolerance for failed steps
+- Absorbs demand spikes
+
+In this example, a producer application creates customer orders and sends them to an Amazon SQS queue. A consumer application processes orders from the producer application tier. The consumer application polls the queue and receives messages. It then records the messages in an Amazon Relational Database Service (Amazon RDS) database and deletes the processed messages from the SQS queue. Amazon SQS sends messages that cannot be processed to a dead-letter queue where they can be processed later.
+
+**Amazon SQS use cases**
+There are many differents ways to use SQS queues
+1. Work queues: using FIFO
+2. Buffering and batch operations: messages will que and will be deliver by batch
+3. Request offloading: enqueue slower requests
+4. Auto Scaling: add another process to scale up the rate of messages
+
+**SQS queue types**
+Amazon SQS offers two types of message queues.
+
+1. Standard queue: support at least once message delivery and provide best effort order. Messages are generally delivered in the same order in which they are sent. However, because of the hihgly distributed architecture, more than one copy of a message might be delivered out of order. Standard queues can hanlde a nearly unlimited number of API calls per second. You can use standard messages queues if your application can process messages that arrive more than once and out of order.
+2. FIFO queue: designed to enhance messaging between application when the order of operation and events is critical or where duplicates can't be tolerated. FIFO queues also provide exactly once processing, but have a limited number of API calls per second.
+
+**Optimizing your amazon SQS queue configurations**
+
+**When to use message queues**
+
+|Good to use|Not Good to use|
+|:------:|:-------:|
+|Service-to-service communication|Selecting specific messages|
+|Asynchronous work items|Large messages|
+|State change notification||
+
+#### Amazon Simple Notification Service (Amazon SNS)
+
+**Amazon SNS**
+|Type of subscribers|
+|:----:|
+|Email/Email-JSON|
+|Mobile text messaging (SMS)|
+|Mobile push notification|
+|HTTP/HTTPS|
+|AWS Lambda|
+|Amazon SQS|
+Kinensis Data Firehouse|
+
+**Use cases for Amazon SNS**
+- Amazon CloudWatch alarm notification
+- Email and SMS messages for a mailing list
+- push notifications for app updates
+
+**Characteristic of Amazon SNS**
+- Single published message
+- No recall options
+- HTTP or HTTPS retry
+- Standard of FIFO topics
+
+**Amazon SNS publish to multiple SQS queues
+- Using highly available services such as Amazon SNS to perform basic message routing is an effetive way of distributing messages to microservices. The two main forms of communication between microservices are request-responses and observer.
+
+**Amazon SNS and Amazon SQS**
+
+|Features|Amazon SNS|Amazon SQS|
+|:----:|:-----:|:-----:|
+|Message persistence|No|Yes|
+|Delivery mechanism|Push(passive|Poll(active)|
+|Producer and consumer|Publisher and subscriber|Send or receive|
+|Distribution model|One to many|One to one|
+
+#### Amazon Kinesis
+
+**Collecting and analyzing streaming data**
+
+**Kinesis Data Streams Overview**
+
+**Kinesis Data Firehose overview**
+
+**
 
 
 
