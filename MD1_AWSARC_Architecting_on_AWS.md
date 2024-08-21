@@ -522,6 +522,42 @@ A bare metal server runs a standalone operating system (OS) with one or many app
 
 **Running containers on AWS**
 
+**Amazon ECR**
+
+**Amazon ECS Orchestration**
+
+**Amazon ECS features**
+- Fully managed
+- Service discovery
+- AWS integrations
+- Work with common dev workflows
+
+**Monolithic to container-based microservices**
+
+**Amazon EKS**
+Kubernetes
+- Run applications at scale
+- Run anywhere
+- Seamlessly move applications
+- Add new functionality
+
+**Amazon EKS solutions**
+1. Amazon EKS run kubernetes on AWS
+2. Provision an Amazon EKS cluster
+3. Fargate Deploy Serverless containers or Amazon EC2 Deploy worker nodes for your Amazon EKS cluster
+4. Connect to Amazon EKS
+5. Run Kubernetes application
+
+**AWS Fargate**
+1. Build a container image
+2. Amazon ECS or Amazon EKS to Define the images and resources needed for your app
+3. AWS Fargate Launch containers, and fargate manages all of the underlying containers infrastructure
+4. Launch containers Fargate runs your containers for you
+5. Manage containers Amazon ECS scales your application and manages your containers for availability.
+
+**Choosing AWS containers services**
+
+
 
 
 
