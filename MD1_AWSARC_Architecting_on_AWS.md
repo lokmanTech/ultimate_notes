@@ -638,7 +638,128 @@ Kinensis Data Firehouse|
 
 **Kinesis Data Firehose overview**
 
-**
+#### AWS Step Functions
+
+**Step Function**
+
+**Step Function: State machine**
+
+**Orchestration of complex distributed workflow**
+
+### Module 12: Edge Services
+
+**Edge fundamentals**
+
+**AWS Cloud at the edge**
+
+**Edge service architecture**
+
+#### Amazon Route 53
+
+**Route 53**
+
+**Route 53 public and private DNS**
+
+**Routing policies**
+
+**Simple routing**
+
+**Failover routing**
+
+**Geolocation routing**
+
+**Geoproximity routing**
+
+**Latency-based routing**
+
+**Multivalue answer routing**
+
+**Weighted routing**
+
+#### Amazon CloudFront
+
+**Content delivery networks**
+
+**Amazon CloudFront overview**
+
+**Edge Caching**
+
+**CloudFront Caching Steps**
+
+**Configuring CloudFront**
+
+**Improving performance**
+
+**DDoS protection**
+
+**DDoS attacks**
+
+**OSI layer attacks**
+
+**AWS Shield**
+
+**AWS WAF**
+
+**Components of access control**
+
+Before configuring AWS WAF, you should understand the components used to control access to your AWS resources
+
+- Web ACLs
+- Rules
+- Rule groups
+- Rule statements
+- IP set
+- Regex pattern set
+- Monitoring and logging
+
+**Control traffic with ACL rule statements**
+
+|Attack Prevention|Traffic Filtering|Pattern matching|Logical operation|
+|:---:|:---:|:---|:----|
+|SQL injectiojn and cross-site scripting detection|Rate limiting|Regex match| AND statement|
+|AWS managed rules for AWS WAF|IP Filtering w/ full Classless Inter-Domain Routing (CIDR) range support|String match|OR statement|
+|AWS Marketplace managed rule groups|Geo-fencing by country|Size constraint match|NOT statement|
+
+**AWS Firewall Manager**
+
+- Centrally set up baseline security
+- Consistently enforce the protections
+- Seamlessly manage multiple accounts
+
+**AWS Firewall Manager use cases**
+
+As your number of application in the AWS Cloud grows, you should be familiar with how to manage compliance at scale:
+
+- Large number of accounts and resources
+- New application created all the time
+- Central organization-wide visibility into threats
+
+
+**DDoS-resilient reference architecture**
+
+#### AWS Outposts
+
+**AWS Outposts Family**
+
+- Host AWS services on premises in your officer or data center
+- Meet data residency requirements or create resources that provide low latency
+- Choose from a full AWS Outposts rack or a 1U or 2U-sized Outposts server
+
+**Outposts rack and Outposts server**
+
+|Outposts rack|Outposts servers|
+|:---:|:----|
+|Scale up to 96 42U-standard racks|Place in your own rack|
+|Pool compute and storage capacity|Choose from 1U Graviton-based processor or 2U Intel Xeon Scalable processor|
+|Get more service options||
+
+
+
+**Outposts extend your VPC**
+
+**AWS resources on Outposts**
+
+AWS service availability differs between Outposts racks and Outposts 1U and 2U servers
 
 
 
