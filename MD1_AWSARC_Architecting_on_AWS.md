@@ -761,6 +761,87 @@ As your number of application in the AWS Cloud grows, you should be familiar wit
 
 AWS service availability differs between Outposts racks and Outposts 1U and 2U servers
 
+### Module 13: Backup and Recovery
+
+**Disaster planning**
+
+**Disaster recovery plan failure**
+- Testing: Lack of testing
+- Resource: Complex recovery parth or lack of sufficient resources
+- Planning: Outdated plans or Changes not factored
+
+**Availability Concepts**
+
+- High availbility
+- Fault tolerance
+- Backup
+- Disaster recovery
+
+**Failover and Regions**
+AWS is available in multiple Regions around the globe. You can choose the most appropriate location for your DR site, in addition to the site where your system is fully deployed. It is highly unlikely for a Region to be unavailable. But it is possible if a very large scale events impacts a Region-for instance, a natural disaster.
+
+**Recovery Point Objectve (RPO) and Recovery Time Objective (RTO)
+
+RPO: Minimize data loss
+RTO: Minimize Downtime
+
+**Essential AWS Service and features for DR**
+
+**Duplicate your Storage**
+
+|Amazon Product|Description|
+|:---:|:-----|
+|Amazon S3| S3 Cross-region Replication|
+|Amazon S3 Glacier| Stores data in Regional Vaults & Updates inventory daily|
+|Amazon EBS|Creates point-in-time volume snapshots & Copy snapshots across regions and accounts|
+|AWS Snow Family|Transfer large volume (>10TB) of data faster than high-speed internet|
+|AWS DataSync|Sync files from on-premises or in-cloud file systems to Amazon EFS|
+
+**Configuring AMIs for recovery**
+
+Obtain and boot new server instances or container within minutes
+
+**Failover network designs**
+
+- Amazon Route 53: Traffic distribution and failover
+- Elastic Load Balancing (ELB): Load balancing health checks and failover
+- Amazon Virtual Private Cloud (Amazon VPC): Extended on-premises network topology
+- AWS Direct connect: Highly resilient dedicated network connection between on-premises infrastructure and Amazon VPC
+
+**Database backup and replicas**
+
+- Amazon Relational Database Service:
+    - Take a snapshot of data and save it in a separate Region
+    - Use Multi A-Z cluster deployment to build a resilient DR strategy
+    - Retain automated backups
+- Amazon DynamoDB:
+    - Backup full tables in seconds
+    - Use point in time recovery to continuously back up tables for up to 35 days
+    - Initiate backups with a single click in the console or a single API call
+    - Use global tables for fast local performance for globally distributed apps.
+
+**Templates and scripts**
+
+- AWS CloudFormation: Use templates to quickly deploy collections of resources as needed
+- Use scripts to automate the provisioning of infrastructure in the cloud
+
+#### AWS Backup
+
+**AWS Backup Overview**
+
+**AWS Backup benefits**
+
+**Understanding how AWS Backup works**
+
+#### Recovery strategies
+
+**Recovery Strategies Overview**
+
+**Backup and restore example**
+
+**Pilot light example**
+
+**Warm standby**
 
 
 
